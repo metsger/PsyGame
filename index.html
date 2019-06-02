@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>TestApp</title>
+  <meta name="description" content="The PsyGame App">
+  <meta name="author" content="Michael Metsger">
+  <script src="vendor/components/jquery/jquery.min.js"></script>
+</head>
+<body>
+<div id="netmsg"></div>
+<div id="psyreq">
+<div id="reqdiv">
+<button id="btn_req" onclick="psyAskBtn()">Я загадал число!</button>
+</div>
+<div id="answdiv">
+Экстрасенсы ответили:<p id="answval"></p>
+<label>Мое загаданое число:<input id="answ_num"></input></label><button id="btn_req" onclick="MyNumBtn()">Отправить</button>
+</div>
+<br><br><br>
+<div id="statistics">Статистика:<br/><p id="statval"></p></div>
+</div>
+<script src="js/ws.js"></script>
+</body>
+</html>
